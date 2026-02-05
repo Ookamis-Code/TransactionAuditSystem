@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionAuditSystem.Tests", "TransactionAuditSystem.Tests.csproj", "{AB7A17E3-C157-2887-64FC-255621EBD39A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB7A17E3-C157-2887-64FC-255621EBD39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7A17E3-C157-2887-64FC-255621EBD39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7A17E3-C157-2887-64FC-255621EBD39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7A17E3-C157-2887-64FC-255621EBD39A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AD088BD-5BD1-47E3-A992-984E9DD10842}
+	EndGlobalSection
+EndGlobal
