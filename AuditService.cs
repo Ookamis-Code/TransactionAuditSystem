@@ -26,7 +26,11 @@ public class AuditService
             result = $"[SUCCESS] {t.Amount:C} transferred from {t.AccountFrom} to {t.AccountTo}.";
                        
         }
-        FileHelper.WriteToLog($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} | {result} | ID: {t.Id} | Amount: {t.Amount:C} | From: {t.AccountFrom} | To: {t.AccountTo}");
+        bool wasSaved = FileHelper.WriteToLog(result);
+        if (!wasSaved)
+        {
+            return "[SYSTEM ALERT] Transaction processed but failed to save to log file.";
+        }
         return result;
     }
     public void DisplayAuditLog()
