@@ -1,0 +1,4 @@
+bin/
+obj/
+audit_log.txt
+.vscode/
