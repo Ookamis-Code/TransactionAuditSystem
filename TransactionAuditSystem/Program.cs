@@ -1,6 +1,9 @@
 ﻿using System;
 using TransactionAuditSystem;
 
+Console.WriteLine(">>> SYSTEM STARTING...");
+DatabaseHelper.InitializeDatabase();
+
 var auditor = new AuditService();
 
 var t1 = new Transaction("TXN001", 150.00m, "Checking", "Savings");

@@ -8,6 +8,11 @@ public class AuditService
 {
     private readonly HashSet<string> _processedIds = new ();
     private readonly List<Transaction> _log = new ();
+    public AuditService()
+    {
+        _processedIds = DatabaseHelper.GetExsitingIds();
+        Console.WriteLine($"[SYSTEM] Recovered {_processedIds.Count} transactions from database.");
+    }
     public string ProcessTransaction(Transaction t)
     {
         string result;
@@ -23,6 +28,7 @@ public class AuditService
         {
             _processedIds.Add(t.Id);
             _log.Add(t);
+            DatabaseHelper.SaveTransaction(t);
             result = $"[SUCCESS] {t.Amount:C} transferred from {t.AccountFrom} to {t.AccountTo}.";
                        
         }

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TransactionAuditSystem.Tests/TransactionAuditSystem.Tests.csproj" />
+  <Project Path="TransactionAuditSystem/TransactionAuditSystem.csproj" />
+</Solution>
